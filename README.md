@@ -1,6 +1,6 @@
 # wk5-Day-Planner
 
-Link: [Work Planner](https://etta0311.github.io/wk4-CodeQuiz/)
+Link: [Work Planner](https://etta0311.github.io/wk5-Day-Planner/)
 
 ## Description
 
@@ -25,7 +25,7 @@ this work is 100% created by my own and without copying others work.
 
 
 ## Usage
-![Demo](./RMimages/Demo.gif)
+![Demo](./RMimages/demo.gif)
 
 ## Contributors
 
@@ -36,6 +36,10 @@ this work is 100% created by my own and without copying others work.
     - https://choosealicense.com/
     - https://momentjs.com/docs/#/displaying/
     - https://www.yogihosting.com/jquery-selector/
+    - http://www.learningaboutelectronics.com/Articles/How-to-create-a-refresh-page-button-using-Javascript.php
+    - https://getbootstrap.com/docs/5.1/getting-started/introduction/
+    - https://api.jquery.com/
+    - https://www.codingnepalweb.com/digital-clock-using-javascript-2/
     
 ## License
 MIT License

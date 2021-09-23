@@ -50,13 +50,14 @@ $("#17 .form-control").val(localStorage.getItem("17"));
 
 //           Event status indicator             //
 function statusindicator() {
-    var current = moment().hour();
-    var hourslot = $(this).parent().attr("#id");
-    hourslot = parseInt(hourslot);
 
     $(".form-control").each(
 
         function () {
+            var current = moment().hour();
+    var hourslot = $(this).parent().attr("id");
+    hourslot = parseInt(hourslot);
+
             if (hourslot === current) {
                 $(this).addClass("present");
                 $(this).removeClass("future");
