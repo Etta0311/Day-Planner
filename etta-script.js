@@ -51,17 +51,24 @@ $("#17 .form-control").val(localStorage.getItem("17"));
 //           Event status indicator             //
 function statusindicator() {
     var current = moment().hour();
-    var hourslot = $(this).parent().attr("id");
+    var hourslot = $(this).parent().attr("#id");
     hourslot = parseInt(hourslot);
 
-    $(".time-block").each(
+    $(".form-control").each(
+
         function () {
-            if (current == hourslot) {
-                $(".form-control").siblings().siblings().addClass("present");
-            } else if (current < hourslot){
-                $(".form-control").siblings().siblings().addClass("future");
+            if (hourslot === current) {
+                $(this).addClass("present");
+                $(this).removeClass("future");
+                $(this).removeClass("past");
+            } else if (hourslot > current){
+                $(this).addClass("future");
+                $(this).removeClass("present");
+                $(this).removeClass("past");
             } else {
-                $(".form-control").siblings().siblings().addClass("past");
+                $(this).addClass("past");
+                $(this).removeClass("present");
+                $(this).removeClass("future");
             }
         }
     )
